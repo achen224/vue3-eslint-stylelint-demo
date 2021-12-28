@@ -1,0 +1,30 @@
+{
+  "name": "vue-project",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preserve": "vite build",
+    "serve": "vite preview --port 5050",
+    "typecheck": "vue-tsc --noEmit",
+    "lint": "eslint --ext .ts,.vue src && stylelint **/*.vue",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "vue": "^3.2.14"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "eslint": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-vue": "^8.1.1",
+    "husky": "^7.0.4",
+    "prettier": "^2.4.1",
+    "stylelint": "^14.1.0",
+    "stylelint-config-recommended-vue": "^1.0.0",
+    "typescript": "~4.3.5",
+    "vite": "^2.6.3",
+    "vue-tsc": "^0.3.0"
+  }
+}
